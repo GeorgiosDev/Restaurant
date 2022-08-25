@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,600&display=swap');
+
+
+body {
+    font-family: 'Tangerine';
+    background-image: url("./images/cover.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}  
+
+/* Div with buttons styling */
+#header{
+    width: 100%;
+    height:15%;
+    background-color: rgb(91, 107, 107);
+    opacity: 0.9;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#header h1 {
+    font-size: 60px;
+    font-weight: 900;
+    color: rgb(238, 200, 10);
+    font-family: inherit;
+
+}
+
+#nav{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    background-color: none;
+    justify-content: space-evenly;
+    opacity: 0.9;
+}
+.button{
+    width: 240px;
+    height: 70px;
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(215, 214, 205);
+    margin:0%;
+    background-color: rgb(67, 16, 186);
+    opacity: 0.9;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-end-start-radius: 14px;
+    border-end-end-radius: 14px;
+}
+
+
+.button:hover,
+.button:focus{
+background-color: antiquewhite;    
+color: rgb(33, 74, 179);
+text-shadow: 0px 0px 12px rgba(41, 41, 41, 0.4);
+font-size: 70px;
+font-weight: 600;
+transition: 0.3s;
+cursor: pointer;
+}
+
+/* tab selection */
+.active {
+    background-color: rgb(194, 191, 166) !important;
+    transform: scale(1.3) perspective(1px);
+    margin-top: 8px;
+
+    }
+
+
+
+/* main */
+#main-content{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+/* Menu styling */
+
+.catalog{
+    width: fit-content;
+    height: fit-content;
+    background: none;
+    display: grid;
+    grid-template-columns:   repeat(3, minmax(0, 1fr));
+    row-gap: 20px;
+    align-self: center;
+    justify-items: center;
+    margin-top: 20px;
+
+
+}
+
+.food {
+    height: 70%;
+    width: 70%;
+    color: rgb(159, 127, 153);
+    font-size: 70px;
+    font-weight: 800;
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(236, 220, 198);
+    border: 3px solid grey;
+    box-shadow: 5px 5px 10px 10px rgba(155, 161, 77, 0.7);
+}
+
+.image{
+    width: 60%;
+    height: 60%;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.food-span{
+    color: rgb(72, 57, 28);
+}
+
+/* Location section styling */
+
+.location{
+    height: 40%;
+    width: 100%;
+    background-color:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+
+}
+
+.location-h3{
+    background-color: antiquewhite;
+    width:fit-content;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Source Serif Pro', serif;
+    margin: 5px 5px 5px 5px;
+    color: rgb(97, 120, 190);
+}
+
+
+/* Info */
+
+.info-section{
+    text-align: center;
+    background-color: rgb(236, 220, 198);
+    margin-top: 80px;
+    height: 500px;
+    width: 80%;
+    font-size: 50px;
+    font-family: 'Source Serif Pro', serif;
+    margin-left: 13%;
+    color: rgb(112, 85, 85);
+}
