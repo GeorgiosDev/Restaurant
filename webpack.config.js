@@ -1,4 +1,6 @@
 const path = require('path');
+const ESLintPlugin = require('eslint-webpack-plugin');
+
 const productionConfig = ([{
   output: {
     publicPath: "/Restaurant/"
@@ -26,6 +28,7 @@ module.exports = {
       
     ],
   },
+  plugins: [new ESLintPlugin()],
   watch: true,
 
 
