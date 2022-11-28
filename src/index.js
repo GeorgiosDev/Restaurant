@@ -3,6 +3,9 @@ import "./styles.css"
 import loadMenu from "./modules/menu"
 import loadLocation from "./modules/location"
 import loadInfo from "./modules/info"
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const navEvents = ()=> {
     const info = document.getElementById("info");
